@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+<div class = 'search-tab'>
+    <input type="search" id = 'topic' placeholder="enter your topic">
+    <button class="search-btn" onclick = 'search()'>Search</button>
+</div>
+<div class = 'container'>
+    <%data.forEach(doc => { %>
+        <div class = 'news-container'>
+            <div class = 'news-title'>
+                <h3><a href = 'https://news.google.com/<%=doc.link.href%>'><%=doc.title%></a></h3>
+            </div>
+            <div class = 'news-img'>
+                <img src = '<%=doc.img%>'>
+            </div>
+        </div>
+    <%})%>
+</div>
+<%- include('partials/footer') -%>
