@@ -31,5 +31,11 @@ app.get('/news/:id',(req,res) => {
        })
     })
 })
+app.get('/about',(req,res) => {
+    res.render('about');
+})
+app.get('/code',(req,res) => {
+    res.redirect('https://github.com/itsprabhi/news-scraper')
+})
 let PORT = process.env.PORT || 3000
 app.listen(PORT, console.log(`App is running successfully on port ${PORT}`))

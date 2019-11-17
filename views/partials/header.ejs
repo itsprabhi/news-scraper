@@ -45,6 +45,9 @@
             color:white;
             text-decoration: none;
         }
+        nav a:hover,.news-container a:hover{
+            color: rgb(49, 172, 243);
+        }
         .nav-items ul{
             list-style: none;
         }
@@ -56,6 +59,38 @@
             text-align: center;
             margin: 50px auto;
         }
+        #topic,.search-btn{
+            padding: 10px 20px;
+            border:none;
+            border-radius: 20px;
+        }
+        #topic{
+            border: 1px solid black;
+            background: #eee;
+        }
+        .search-btn{
+            background: rgb(49, 172, 243);
+        }
+        .home-head{
+            font-size: 50px;
+        }
+        footer{
+            background: rgb(37, 37, 37);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color:rgb(201, 201, 201);
+        }
+        footer a{
+            color:rgb(201, 201, 201)
+        }
+        footer>div{
+            margin: 0px 20px;
+        }
+        .container{
+            margin-bottom: 50px;
+        }
     </style>
 </head>
 <body>
@@ -66,7 +101,6 @@
         <div class = 'nav-items'>
             <ul>
                 <li><a href = '/'>Home</a></li>
-                <li><a href = '/about'>About</a></li>
                 <li><a href = '/code'>Code</a></li>
             </ul>
         </div>
